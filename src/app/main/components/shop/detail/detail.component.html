@@ -1,0 +1,18 @@
+<div class="container-fluid mt-5">
+  <div class="d-flex  justify-content-center" *ngFor="let product of products">
+    <div class="card mb-3" style="max-width: 800px;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src={{product.image}} class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">{{product.title}}</h5>
+            <p class="card-text">{{product.description}}</p>
+            <i class="fa-solid fa-cart-plus fa-xl card-icon" style="color: #000000;" title="Agregar al Carrito"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
